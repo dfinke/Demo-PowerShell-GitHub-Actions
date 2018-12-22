@@ -3,6 +3,7 @@ workflow "New workflow" {
   resolves = ["Deploy to Azure"]
 }
 
+
 action "Deploy to Azure" {
   uses = "./.github/azdeploy"
   secrets = ["SERVICE_PASS"]
